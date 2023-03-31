@@ -5,13 +5,16 @@ header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-$DB_HOST = $_ENV["$DB_HOST"];
-$DB_USER = $_ENV["$DB_USER"];
-$DB_PASSWORD = $_ENV["$DB_PASSWORD"];
-$DB_NAME = $_ENV["$DB_NAME"];
-$DB_PORT = $_ENV["$DB_PORT"];
-$con = mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT");
+
+//$DB_HOST = $_ENV["$DB_HOST"];
+//$DB_USER = $_ENV["$DB_USER"];
+//$DB_PASSWORD = $_ENV["$DB_PASSWORD"];
+//$DB_NAME = $_ENV["$DB_NAME"];
+//$DB_PORT = $_ENV["$DB_PORT"];
+//$con = mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT");
 //mysqli_select_db($con,"portfolio");
+
+$con = mysqli_connect("containers-us-west-42.railway.app","root","KT5ZuzWGzcQm57m41fTc","railway","5900");
 
 $data = json_decode(file_get_contents("php://input"));
 
