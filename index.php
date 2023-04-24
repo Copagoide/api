@@ -14,7 +14,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 //$con = mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT");
 //mysqli_select_db($con,"portfolio");
 
-$con = mysqli_connect("containers-us-west-42.railway.app","root","KT5ZuzWGzcQm57m41fTc","railway","5900");
+$con = mysqli_connect("containers-us-west-42.railway.app","root","7RJIZEs1ZZrYHfqYGHJf","railway","5900");
 
 $data = json_decode(file_get_contents("php://input"));
 
